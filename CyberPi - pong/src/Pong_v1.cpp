@@ -23,6 +23,9 @@ Sprite ball;    // mi s njima, oni fiziku analogija prema paddle
 
 void calculateMovement()
 {
+  if (cyber.get_joystick_y()>0){
+    ball.y +=1;
+  }
   ball.x = ball.x + ball.xSpeed;
   ball.y += ball.ySpeed;
 
